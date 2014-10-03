@@ -621,6 +621,22 @@ server is easily embeddable in a Spring Boot application using the
 </div>
 <div class="sect2">
 <h3 id="_encryption_and_decryption">Encryption and Decryption</h3>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Important</div>
+</td>
+<td class="content">
+<strong>Prerequisites:</strong> to use the encryption and decryption features
+you need the full-strength JCE installed in your JVM (it&#8217;s not there by default).
+You can download the "Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files"
+from Oracle, and follow instructions for installation (essentially replace the 2 policy files
+in the JRE lib/security directory with the ones that you downloaded).
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>The server exposes <code>/encrypt</code> and <code>/decrypt</code> endpoints (on the
 assumption that these will be secured and only accessed by authorized
@@ -982,7 +998,7 @@ application that includes that jar on its classpath.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2014-10-02 11:47:51 BST
+Last updated 2014-10-02 14:42:18 BST
 </div>
 </div>
 </body>
