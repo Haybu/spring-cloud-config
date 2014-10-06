@@ -42,3 +42,5 @@ git push origin gh-pages
 # Finally, switch back to the master branch and exit block
 git checkout master
 if [ "$dirty" != "0" ]; then git stash pop; fi
+
+exit 0
